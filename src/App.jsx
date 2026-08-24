@@ -104,6 +104,10 @@ function App() {
 
   return (
     <div className="portfolio-container">
+      {/* Full-Screen Avatar Background Watermark & Vignette */}
+      <div className="bg-avatar-overlay" style={{ backgroundImage: `url(${avatarImg})` }}></div>
+      <div className="bg-vignette"></div>
+
       {/* Decorative Radial Glows */}
       <div className="radial-glow-1"></div>
       <div className="radial-glow-2"></div>
@@ -131,48 +135,37 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero-section" id="hero">
-        <div className="hero-grid">
-          <div className="hero-info">
-            <div className="hero-tagline">
-              <Cpu size={16} />
-              <span>AI/ML & FULL-STACK DEVELOPMENT</span>
-            </div>
-            <h1 className="hero-name">Ayushman Sahani</h1>
-            <div className="hero-title-scroll">
-              <span>I'm a</span>
-              <span className="typed-role">{typedRole || '\u00A0'}</span>
-            </div>
-            <p className="hero-description">
-              Final year Computer Science and Engineering student at IIIT Bhubaneswar. I design and build intelligent, 
-              scalable full-stack applications leveraging Computer Vision, Dense Vector Retrieval (RAG), and modern JavaScript.
-            </p>
-            <div className="hero-cta">
-              <a href="#projects" className="btn-primary">
-                View My Work <ExternalLink size={18} />
-              </a>
-              <a href="#contact" className="btn-secondary">
-                Let's Talk <Mail size={18} />
-              </a>
-            </div>
-            <div className="social-links">
-              <a href="https://github.com/Ayushman-40020220" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
-                <Github size={20} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
-                <Linkedin size={20} />
-              </a>
-              <a href="mailto:ayushmansahani639@gmail.com" className="social-icon" aria-label="Email">
-                <Mail size={20} />
-              </a>
-            </div>
-          </div>
-          <div className="hero-visual">
-            <div className="avatar-wrapper">
-              <img src={avatarImg} alt="Ayushman Sahani Coding Avatar" className="avatar-img" />
-              <div className="laser-line"></div>
-              <div className="glow-ring"></div>
-            </div>
-          </div>
+        <div className="hero-tagline">
+          <Cpu size={16} />
+          <span>AI/ML & FULL-STACK DEVELOPMENT</span>
+        </div>
+        <h1 className="hero-name">Ayushman Sahani</h1>
+        <div className="hero-title-scroll">
+          <span>I'm a</span>
+          <span className="typed-role">{typedRole || '\u00A0'}</span>
+        </div>
+        <p className="hero-description">
+          Final year Computer Science and Engineering student at IIIT Bhubaneswar. I design and build intelligent, 
+          scalable full-stack applications leveraging Computer Vision, Dense Vector Retrieval (RAG), and modern JavaScript.
+        </p>
+        <div className="hero-cta">
+          <a href="#projects" className="btn-primary">
+            View My Work <ExternalLink size={18} />
+          </a>
+          <a href="#contact" className="btn-secondary">
+            Let's Talk <Mail size={18} />
+          </a>
+        </div>
+        <div className="social-links">
+          <a href="https://github.com/Ayushman-40020220" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
+            <Github size={20} />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+            <Linkedin size={20} />
+          </a>
+          <a href="mailto:ayushmansahani639@gmail.com" className="social-icon" aria-label="Email">
+            <Mail size={20} />
+          </a>
         </div>
       </section>
 
