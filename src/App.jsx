@@ -14,7 +14,6 @@ import {
   Send 
 } from 'lucide-react';
 import './App.css';
-import profileImg from './assets/profile.jpg';
 import avatarImg from './assets/avatar.jpg';
 
 const Github = (props) => (
@@ -192,7 +191,7 @@ function App() {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className="about-image-wrapper">
-              <img src={profileImg} alt="Ayushman Sahani" className="about-profile-img" />
+              <img src={avatarImg} alt="Ayushman Sahani Avatar" className="about-profile-img" />
             </div>
             <div className="about-stats" style={{ width: '100%' }}>
               <div className="glass-card stat-box">
