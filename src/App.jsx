@@ -14,6 +14,7 @@ import {
   Send 
 } from 'lucide-react';
 import './App.css';
+import profileImg from './assets/profile.jpg';
 
 const Github = (props) => (
   <svg
@@ -184,22 +185,27 @@ function App() {
               architectures (PostgreSQL, Firebase), and modern developer workflows.
             </p>
           </div>
-          <div className="about-stats">
-            <div className="glass-card stat-box">
-              <div className="stat-number">4+</div>
-              <div className="stat-label">AI & Web Projects</div>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div className="about-image-wrapper">
+              <img src={profileImg} alt="Ayushman Sahani" className="about-profile-img" />
             </div>
-            <div className="glass-card stat-box">
-              <div className="stat-number">99.2%+</div>
-              <div className="stat-label">Face Verification Rate</div>
-            </div>
-            <div className="glass-card stat-box">
-              <div className="stat-number">sub-50ms</div>
-              <div className="stat-label">RAG Retrieval Latency</div>
-            </div>
-            <div className="glass-card stat-box">
-              <div className="stat-number">2027</div>
-              <div className="stat-label">CSE Graduation Year</div>
+            <div className="about-stats" style={{ width: '100%' }}>
+              <div className="glass-card stat-box">
+                <div className="stat-number">5+</div>
+                <div className="stat-label">AI & Web Projects</div>
+              </div>
+              <div className="glass-card stat-box">
+                <div className="stat-number">99.2%+</div>
+                <div className="stat-label">Face Verification Rate</div>
+              </div>
+              <div className="glass-card stat-box">
+                <div className="stat-number">sub-50ms</div>
+                <div className="stat-label">RAG Retrieval Latency</div>
+              </div>
+              <div className="glass-card stat-box">
+                <div className="stat-number">2027</div>
+                <div className="stat-label">CSE Graduation Year</div>
+              </div>
             </div>
           </div>
         </div>
@@ -315,6 +321,33 @@ function App() {
               <li>FastAPI</li>
               <li>Firebase Auth</li>
               <li>PostgreSQL</li>
+            </ul>
+          </div>
+
+          {/* Project 5 - AI Interview & Placement Copilot */}
+          <div className="glass-card project-card">
+            <div className="project-header">
+              <div className="project-icon">
+                <Terminal size={24} />
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/Ayushman-40020220" target="_blank" rel="noopener noreferrer" className="project-link" aria-label="GitHub">
+                  <Github size={20} />
+                </a>
+              </div>
+            </div>
+            <h3 className="project-title">AI Interview Copilot</h3>
+            <p className="project-desc">
+              Interactive placement preparation system simulating technical coding panels and viva sessions. 
+              Features real-time voice-response transcription, automated vector-based evaluation scoring, 
+              and custom resume auditing models to benchmark student capabilities.
+            </p>
+            <ul className="project-tech">
+              <li>React</li>
+              <li>FastAPI</li>
+              <li>Groq LLM</li>
+              <li>Whisper Speech</li>
+              <li>FAISS</li>
             </ul>
           </div>
         </div>
